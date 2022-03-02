@@ -1,0 +1,43 @@
+.TeamCard {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    grid-row-gap: 1.5em;
+    display: grid;
+    justify-content: center;
+  }
+
+  @media (max-width: 1000px){
+    .TeamCard{
+        display: flex;
+        flex-wrap: wrap; /*este flex wrap funciona como un mediaqueri*/
+        justify-content: center;
+        margin: 5px;
+    }
+}
+
+.TeamCard-item{
+    border: solid 2px var(--color1);
+    max-width: 230px;
+    min-width: 230px;
+    max-height: 350px;
+    min-height: 350px;
+}
+
+.TeamCard-item:hover{
+    border: solid 2px var(--color4);
+}
+
+.item-logo{
+    display: flex;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 5px;
+}
+
+.item-text {
+    padding: 10px;
+}
+.TeamCard a {
+    text-decoration: none;
+    color: var(--color1);
+}

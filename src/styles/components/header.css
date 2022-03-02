@@ -1,0 +1,17 @@
+.Header{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color1);
+    color: var(--color3);
+}
+
+.Header h2 {
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.Header a{
+    text-decoration: none;
+    color: var(--color3);
+}

@@ -1,0 +1,40 @@
+.Review{
+    padding: 0px 5px 0px 5px;
+}
+
+.Review-description{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+@media (max-width: 1000px){
+    .Review-description{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.Review-team{
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.Review-venue{
+    padding: 10px;
+}
+
+.Review-stadium{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+
+@media (max-width: 1000px){
+    .Review-stadium{
+        display: flex;
+        width: 280px;
+        height: 150px;
+    }
+};

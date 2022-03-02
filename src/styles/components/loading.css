@@ -1,0 +1,15 @@
+.Loading{
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    margin: 15rem;
+}
+.spinning{
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
