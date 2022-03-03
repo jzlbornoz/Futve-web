@@ -6,8 +6,13 @@ const Header = () => {
     return (
         <div className='Header'>
             <Link to='/'>
-            <h2>FUTve info</h2>
+                <h2>FUTve info</h2>
             </Link>
+            <ul>
+                <Link to='/goalScorer'>
+                    <li>Goleadores</li>
+                </Link>
+            </ul>
         </div>
     )
 }

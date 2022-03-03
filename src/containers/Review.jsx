@@ -4,7 +4,7 @@ import '../styles/containers/review.css';
 
 const Review = () => {
     const { state } = useContext(AppContext);
-    const { select } = state
+    const { select } = state;
     return (
         <div className='Review'>
             {select.map(selected => (

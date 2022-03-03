@@ -6,6 +6,7 @@ import { Home } from '../containers/Home';
 import { Layout } from '../components/Layout';
 import { Review } from '../containers/Review';
 import { NotFound } from '../containers/NotFound';
+import { GoalScorer} from '../containers/GoalScorer.jsx';
 
 const App = () => {
   const intialValue = useTeam();
@@ -16,6 +17,7 @@ const App = () => {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/review" element={<Review />} />
+            <Route exact path="/goalScorer" element={<GoalScorer />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
