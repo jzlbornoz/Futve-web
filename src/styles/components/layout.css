@@ -5,4 +5,5 @@ body {
     padding: 0;
     font-family: 'Maven Pro', sans-serif;
     color: var(--color1);
+    background-color: var(--color1);
   }

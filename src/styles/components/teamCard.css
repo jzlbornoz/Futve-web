@@ -16,11 +16,13 @@
 }
 
 .TeamCard-item{
-    border: solid 2px var(--color1);
+    border: solid 2px var(--color2);
     max-width: 230px;
     min-width: 230px;
-    max-height: 350px;
-    min-height: 350px;
+    max-height: 310px;
+    min-height: 310px;
+    background-color: var(--color3);
+    border-radius: 5px;
 }
 
 .TeamCard-item:hover{

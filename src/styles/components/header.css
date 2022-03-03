@@ -1,7 +1,7 @@
 .Header{
     margin-bottom: 20px;
     display: flex;
-    background-color: var(--color1);
+    background-color: var(--color5);
     color: var(--color3);
     align-items: center;
 }

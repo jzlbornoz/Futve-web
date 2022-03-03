@@ -6,4 +6,5 @@
     align-items: center;
     border: solid 1px var(--color2);
     margin-bottom: 30px;
+    color: var(--color2);
   }
