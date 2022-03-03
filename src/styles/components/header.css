@@ -1,9 +1,17 @@
 .Header{
     margin-bottom: 20px;
     display: flex;
-    justify-content: space-between;
     background-color: var(--color1);
     color: var(--color3);
+    align-items: center;
+}
+
+.Header-nav li{
+    list-style: none;
+}
+
+.Header-nav li:hover{
+    color: var(--color2);
 }
 
 .Header h2 {

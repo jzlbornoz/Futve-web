@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 import { Loading } from '../components/Loading';
+import { KillerCard } from '../components/KillerCard';
+import '../styles/components/GoalScorer.css'
 
 const GoalScorer = () => {
     const { killers, loading } = useContext(AppContext);
@@ -11,7 +13,7 @@ const GoalScorer = () => {
         return (
             <div className="GoalScorer">
                 {killers.map(killer => (
-                    <div>{killer.player.name}</div>
+                    <KillerCard killer={killer} key={killer.player.id}/>
                 ))}
             </div>
         )

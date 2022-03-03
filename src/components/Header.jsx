@@ -8,7 +8,7 @@ const Header = () => {
             <Link to='/'>
                 <h2>FUTve info</h2>
             </Link>
-            <ul>
+            <ul className='Header-nav'>
                 <Link to='/goalScorer'>
                     <li>Goleadores</li>
                 </Link>

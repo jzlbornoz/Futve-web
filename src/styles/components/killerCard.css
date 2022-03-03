@@ -1,0 +1,9 @@
+.KillerCard-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-left: 10px;
+    align-items: center;
+    border: solid 1px var(--color2);
+    margin-bottom: 30px;
+  }
