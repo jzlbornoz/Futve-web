@@ -1,0 +1,71 @@
+.KillerReview{
+    background-color: #200227;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233c0349' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    margin: 50px;
+    padding: 10px;
+    color: var(--color3);
+    border: solid 1px var(--color2);
+    padding: 10px;
+}
+
+@media (max-width: 1000px){
+    .KillerReview{
+        margin: 20px;
+        padding: 20px;   
+    }
+}
+
+.Player-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Player-name h1 {
+    margin-left: 10px;
+}
+
+.Player-Card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: 1000px){
+    .Player-Card{
+        display: flex;
+        flex-wrap: wrap; /*este flex wrap funciona como un mediaqueri*/
+        justify-content: flex-start;
+        margin: 0px;
+        flex-direction: column;
+    }
+}
+
+.Player-statistics{
+    margin-left: 50px;
+    color: var(--color2);
+}
+
+@media (max-width: 1000px){
+    .Player-statistics{
+       margin-left: 0px;
+    }
+}
+
+.Statistics-card{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5rem;
+    grid-row-gap: 1.5em;
+    display: grid;
+    justify-content: center
+}
+
+@media (max-width: 1000px){
+    .Statistics-card{
+        grid-template-columns: repeat(2, 2fr);
+    grid-gap: 2rem;
+    grid-row-gap: 1.5em;
+    display: grid;
+    justify-content: start;
+    }
+}

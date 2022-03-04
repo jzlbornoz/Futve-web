@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles/components/killerCard.css';
 
-const KillerCard = ({ killer }) => {
+const KillerCard = ({ killer , handleKiller }) => {
 
     return (
-        <div className='KillerCard'>
+        <div className='KillerCard' onClick={() => handleKiller(killer)}>
             <div className="KillerCard-item">
                 <img src={killer.player.photo} alt="" />
                 <div className="KillerCard-info">

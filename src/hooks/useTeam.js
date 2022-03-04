@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import initialState from '../initialState';
 
 const useTeam = () => {
@@ -42,12 +42,20 @@ const useTeam = () => {
             })
     }, [])
 
+    //Selecciona el equipo
     const addToSelect = payload => {
         setState({
             ...state,
-            select: [payload]
+            selectTeam: [payload]
         });
         console.log(state)
+    };
+
+    const addToKiller = payload => {
+        setState({
+            ...state,
+            selectKiller: [payload]
+        });
     };
 
     return ({
@@ -55,7 +63,8 @@ const useTeam = () => {
         addToSelect,
         state,
         loading,
-        killers
+        killers,
+        addToKiller,
     })
 };
 

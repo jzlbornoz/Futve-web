@@ -1,5 +1,23 @@
-.GoalScorer h1 {
+.GoalScorer-title{
     color: var(--color2);
-    text-align: center;
-    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+@media (max-width: 1000px){
+    .GoalScorer-title{
+        font-size: 15px;
+    }
+}
+
+.GoalScorer-title h1 {
+    margin-left: 10px;
+    
+}
+
+.GoalScorer a {
+    text-decoration: none;
 }

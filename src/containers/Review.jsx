@@ -4,11 +4,11 @@ import '../styles/containers/review.css';
 
 const Review = () => {
     const { state } = useContext(AppContext);
-    const { select } = state;
+    const { selectTeam } = state;
     return (
         <div className='Review'>
             <div className="Review-Card">
-            {select.map(selected => (
+            {selectTeam.map(selected => (
                 <section key={selected.venue.id}>
                     <h1>DESCRIPCION: {selected.team.name}</h1>
                     <div className="Review-description" >

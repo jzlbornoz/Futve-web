@@ -3,23 +3,33 @@ import { AppContext } from '../context/AppContext';
 import { Loading } from '../components/Loading';
 import { KillerCard } from '../components/KillerCard';
 import '../styles/containers/GoalScorer.css'
+import { Link } from 'react-router-dom';
 
 const GoalScorer = () => {
-    const { killers, loading } = useContext(AppContext);
+    const { killers, loading, addToKiller } = useContext(AppContext);
+
+    const handleKiller = (player) => () => {
+        addToKiller(player);
+    };
 
     if (loading) {
         return <Loading />
-    }else {
+    } else {
         return (
             <div className="GoalScorer">
-                <h1>Top GoalScorer</h1>
+                <div className="GoalScorer-title">
+                    <i className="fa-solid fa-bullseye fa-2xl" />
+                    <h1>Top GoalScorer</h1>
+                </div>
                 {killers.map(killer => (
-                    <KillerCard killer={killer} key={killer.player.id}/>
+                    <Link to='/goalScorer/review' key={killer.player.id} >
+                        <KillerCard killer={killer} handleKiller={handleKiller(killer)} />
+                    </Link>
                 ))}
             </div>
         )
     }
-    
+
 }
 
 export { GoalScorer };

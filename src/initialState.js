@@ -1,3 +1,4 @@
 export default {
-    select: [],
+    selectTeam: [],
+    selectKiller: [],
 }
