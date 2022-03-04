@@ -7,6 +7,7 @@ const Review = () => {
     const { select } = state;
     return (
         <div className='Review'>
+            <div className="Review-Card">
             {select.map(selected => (
                 <section key={selected.venue.id}>
                     <h1>DESCRIPCION: {selected.team.name}</h1>
@@ -28,6 +29,7 @@ const Review = () => {
                     <img src={selected.venue.image} alt={selected.venue.name} className='Review-stadium' />
                 </section>
             ))}
+            </div>
         </div>
     )
 }

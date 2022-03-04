@@ -7,12 +7,12 @@ const KillerCard = ({ killer }) => {
         <div className='KillerCard'>
             <div className="KillerCard-item">
                 <img src={killer.player.photo} alt="" />
-                <div className="info">
-                    <h2>{killer.player.name}</h2>
-                    <h3 className='map'>Goles:{killer.statistics.map(equipo => (<p key={equipo.team.id + killer.name}>{equipo.goals.total}</p>))}</h3>
-                    <h3>Edad:{killer.player.age}</h3>
-                    <h3>Pais:{killer.player.nationality}</h3>
-                    <h3 className='map'>Equipo:{killer.statistics.map(equipo => (<p key={equipo.team.id + killer.name}>{equipo.team.name}</p>))}</h3>
+                <div className="KillerCard-info">
+                    <h2 className='KillerCard-name'>{killer.player.name}</h2>
+                    <h2 className='map'>Goles: {killer.statistics.map(equipo => (<p key={equipo.team.id + killer.name}>{equipo.goals.total}</p>))}</h2>
+                    <h2>Edad: {killer.player.age}</h2>
+                    <h2>Pais: {killer.player.nationality}</h2>
+                    <h2 className='map'>Equipo: {killer.statistics.map(equipo => (<p key={equipo.team.id + killer.name}>{equipo.team.name}</p>))}</h2>
                 </div>
 
             </div>
