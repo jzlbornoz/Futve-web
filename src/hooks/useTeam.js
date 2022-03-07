@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 import initialState from '../initialState';
 
 const useTeam = () => {
@@ -6,7 +6,7 @@ const useTeam = () => {
     const [team, setTeam] = useState([]);
     const [state, setState] = useState(initialState);
     const [loading, setLoading] = useState(true);
-    const [killers , setKillers] = useState([]);
+    const [killers, setKillers] = useState([]);
 
     //Trae a los equipos del futve
     useEffect(() => {
@@ -23,7 +23,7 @@ const useTeam = () => {
                 setTeam(data.response);
                 setLoading(false);
             })
-    }, [])
+    }, []);
 
     //Trae a los goleadores del futve
     useEffect(() => {
@@ -38,9 +38,14 @@ const useTeam = () => {
             .then((data) => {
                 console.log(data.response);
                 setKillers(data.response);
-                setLoading(false);
+                if (data.response.length > 0) {
+                    setLoading(false)
+                } else {
+                    setLoading(true)
+                };
             })
-    }, [])
+    }, []);
+
 
     //Selecciona el equipo
     const addToSelect = payload => {

@@ -10,7 +10,10 @@ const Header = () => {
             </Link>
             <ul className='Header-nav'>
                 <Link to='/goalScorer'>
-                    <li>Goleadores</li>
+                    <li>GoalScorer</li>
+                </Link>
+                <Link to='/topAssists' >
+                    <li>TopAssists</li>
                 </Link>
             </ul>
         </div>

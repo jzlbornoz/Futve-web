@@ -2,7 +2,9 @@
     color: var(--color2);
     display: flex;
     justify-content: center;
-    margin: 15rem;
+    font-size: 60px;
+    margin-top: 270px;
+    margin-bottom: 270px;
 }
 .spinning{
     animation: spinner 1s linear infinite;

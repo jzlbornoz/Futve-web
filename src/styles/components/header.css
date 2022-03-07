@@ -5,10 +5,18 @@
     color: var(--color3);
     align-items: center;
     border-bottom: solid 1px var(--color1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.Header ul {
+    display: flex;
 }
 
 .Header-nav li{
     list-style: none;
+    margin-right: 15px;
 }
 
 .Header-nav li:hover{
