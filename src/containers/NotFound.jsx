@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import '../styles/containers/notFound.css';
 
 const NotFound = () => {
     return (
-        <div>NotFound</div>
+        <div className="NotFound">
+            <i className="fa-brands fa-wpexplorer fa-2xl" />
+            NOT FOUND
+        </div>
     )
 }
 

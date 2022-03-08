@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 import '../styles/containers/killerReview.css';
 
@@ -35,6 +36,9 @@ const KillerReview = () => {
                                 </div>
                             ))}
                         </div>
+                        <Link to='/goalScorer' className='Back'>
+                        <i className="fa-solid fa-arrow-right-from-bracket fa-2xl" />
+                        </Link>
                     </div>
                 ))}
             </div>

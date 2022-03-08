@@ -8,7 +8,6 @@ import { Review } from '../containers/Review';
 import { NotFound } from '../containers/NotFound';
 import { GoalScorer} from '../containers/GoalScorer.jsx';
 import { KillerReview } from '../containers/KillerReview';
-import { TopAssists } from '../containers/TopAssists';
 import { Team } from '../components/Team';
 
 const App = () => {
@@ -23,7 +22,6 @@ const App = () => {
             <Route exact path="/review" element={<Review />} />
             <Route exact path="/goalScorer" element={<GoalScorer />} />
             <Route exact path="/goalScorer/review" element={<KillerReview />} />
-            <Route exact path="/topAssists" element={<TopAssists />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

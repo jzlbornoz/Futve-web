@@ -1,3 +1,4 @@
+
 .Header{
     display: flex;
     color: var(--color3);
@@ -5,9 +6,18 @@
     position: absolute;
     top: 0;
     width: 100%;
+    justify-content: space-between;
 }
 
-.Header ul {
+.Header-section{
+    display: flex;
+    color: var(--color3);
+    align-items: center;
+    top: 0;
+    width: 100%;
+}
+
+.Header-section ul {
     display: flex;
 }
 
@@ -20,7 +30,7 @@
     color: var(--color2);
 }
 
-.Header h2 {
+.Header-section h2 {
     padding: 5px;
     margin-left: 5px;
 }
@@ -28,4 +38,24 @@
 .Header a{
     text-decoration: none;
     color: var(--color3);
+}
+
+.logo{
+    padding: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+@media (max-width: 1000px){
+    .logo img{
+        width: 50px;
+        height: auto;
+    }
+}
+
+@media (max-width: 386px){
+    .logo img{
+        width: 0px;
+        height: auto;
+    }
 }

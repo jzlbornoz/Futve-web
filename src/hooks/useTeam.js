@@ -46,7 +46,6 @@ const useTeam = () => {
             })
     }, []);
 
-
     //Selecciona el equipo
     const addToSelect = payload => {
         setState({
