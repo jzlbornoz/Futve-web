@@ -1,7 +1,82 @@
-.Home {
-    padding: 10px;
-    grid-template-columns: minmax(auto, 768px);
-    display: grid;
-    justify-content: center;
+.Home{
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-bottom: 310px;
+    display: flex;
+}
+
+.Home-barra{
+    width: 10px;
+    height: auto;
+    background-color: #3bb78f;
+background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    margin-right: 20px;
+}
+
+.Home-information{
+    padding: 40px;
+}
+
+.Home h2 {
+    font-size: 60px;
+    margin-top: 10px;
+    color: var(--color3);
+    font-weight: 30;
+}
+
+.Home h3 {
+    font-size: 40px;
+    color: var(--color2);
+    margin: 0 0 10px;
+    font-weight: 100;
+}
+
+.Home h5 {
+    font-size: 20px;
+    color: var(--color4);
+    margin: 20px 0 10px;
+    font-weight: 100;
+}
+
+.Home-btn{
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    color: var(--color3);
+    font-size: larger;
+    border: 0;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.Home-btn p {
+    margin-right: 25px;
+}
+
+.Home-btn:hover{
+    background-color: var(--color1);
+    background-image: none;
+    border: 1px solid var(--color3);
+    outline: none;
+}
+
+.Home a {
+    text-decoration: none;
+}
+
+@media (max-width: 1000px){
+    .Home{
+        margin-top: 200px;
+    }
+    .Home-barra{
+        margin-right: 0;
+    }
+    .Home-information{
+        padding: 20px;
+    }
 }

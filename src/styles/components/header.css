@@ -1,11 +1,8 @@
 .Header{
-    margin-bottom: 20px;
     display: flex;
-    background-color: var(--color5);
     color: var(--color3);
     align-items: center;
-    border-bottom: solid 1px var(--color1);
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
 }

@@ -1,9 +1,13 @@
 import React from 'react';
 import { TeamCard } from './TeamCard';
+import '../styles/components/team.css';
 
 const Team = () => {
     return (
-        <TeamCard />
+        <div className="Team">
+            <TeamCard />
+        </div>
+
     )
 }
 

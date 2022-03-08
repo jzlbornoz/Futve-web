@@ -8,17 +8,17 @@
     border: solid 1px var(--color1);
     margin-bottom: 30px;
     color: var(--color3);
-    background-color: #360441;
-background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%2316001a' fill-opacity='0.31' fill-rule='evenodd'/%3E%3C/svg%3E");
+    border: solid 1px var(--color3);
+    background-color: none;
     padding: 5px;
     max-height: 150px;
   }
 
   .KillerCard-item:hover{
-    color: var(--color2);
-    border: solid 1px var(--color2);
-    background-color: #200227;
-    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%233c0349' fill-opacity='1' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    color: var(--color8);
+    border: solid 1px var(--color8);
+    background-color: #09203f;
+background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23537895' fill-opacity='0.12' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
   }
 
   @media (max-width: 1000px){
