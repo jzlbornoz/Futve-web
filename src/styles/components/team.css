@@ -1,0 +1,8 @@
+.Team {
+    padding: 10px;
+    grid-template-columns: minmax(auto, 768px);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
