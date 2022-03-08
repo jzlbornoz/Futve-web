@@ -8,8 +8,7 @@ const Footer = () => {
                 <h2>
                     Created by Javier Albornoz
                 </h2>
-                <h3>2022</h3>
-                <h3>Merida - Venezuela</h3>
+                <h3>Merida - Venezuela <br /> 2022</h3>
                 </div>
         </div>
     )

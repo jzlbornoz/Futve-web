@@ -4,6 +4,8 @@
     margin-top: 50px;
 }
 
+
+
 .Footer-wrapper{
     display: flex;
     align-items: center;
@@ -17,4 +19,14 @@
 
 .Footer-wrapper h3{
     font-weight: 100;
+}
+
+@media (max-width: 1000px){
+    .Footer-wrapper h2{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .Footer-wrapper h3{
+        font-size: 12px;
+    }
 }
