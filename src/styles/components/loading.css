@@ -1,13 +1,13 @@
 .Loading{
     color: var(--color2);
-    display: flex;
-    justify-content: center;
-    font-size: 60px;
-    margin-top: 270px;
-    margin-bottom: 270px;
+    height: 70vh;
+    font-size: 30px;
 }
 .spinning{
     animation: spinner 1s linear infinite;
+    position: absolute;
+    left: 40%;
+    top: 40%;
 }
 
 @keyframes spinner {

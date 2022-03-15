@@ -1,7 +1,7 @@
 .Footer{
     color: #ffff;
-    padding: 10px;
-    margin-top: 50px;
+    width: 100%;
+    height: 15vh;
 }
 
 
@@ -10,7 +10,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: medium;
+    font-size: smaller;
+    padding: 0 10px;
 }
 
 .Footer-wrapper h2{

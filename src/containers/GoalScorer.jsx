@@ -14,7 +14,7 @@ const GoalScorer = () => {
 
     if (loading) {
         return <Loading />
-    } else {
+    } if (killers) {
         return (
             <div className="GoalScorer">
                 <div className="GoalScorer-title">
@@ -28,6 +28,8 @@ const GoalScorer = () => {
                 ))}
             </div>
         )
+    }else {
+        return <Loading />
     }
 
 }

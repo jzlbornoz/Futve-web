@@ -1,0 +1,23 @@
+.KillerEmpty{
+    height: 70vh;
+    color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.KillerEmptyWrapped{
+    position: absolute;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+span{
+    margin-bottom: 50px;
+}
+
+.KillerEmpty a {
+    color: var(--color3);
+}

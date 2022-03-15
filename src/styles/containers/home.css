@@ -1,20 +1,19 @@
 .Home{
-    margin-top: 100px;
-    margin-left: 10px;
-    margin-bottom: 310px;
     display: flex;
+    height: 70vh;
 }
 
 .Home-barra{
     width: 10px;
     height: auto;
     background-color: #3bb78f;
-background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
     margin-right: 20px;
+    margin-left: 30px;
 }
 
 .Home-information{
-    padding: 40px;
+    padding: 35px;
 }
 
 .Home h2 {
@@ -72,10 +71,11 @@ background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
 
 @media (max-width: 1000px){
     .Home{
-        margin-top: 200px;
+        margin-top: 0px;
     }
     .Home-barra{
         margin-right: 0;
+        margin-left: 15px;
     }
     .Home-information{
         padding: 20px;

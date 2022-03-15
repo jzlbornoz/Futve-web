@@ -7,5 +7,10 @@ body {
     color: var(--color1);
     background-color: #537895;
     background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
+  }
 
+  .Layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }

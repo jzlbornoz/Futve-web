@@ -1,10 +1,15 @@
 import React, { useContext } from 'react';
+import { TeamEmpty } from '../components/TeamEmpty';
 import { AppContext } from '../context/AppContext';
 import '../styles/containers/review.css';
 
 const Review = () => {
     const { state } = useContext(AppContext);
     const { selectTeam } = state;
+
+    if (selectTeam.length < 1) {
+        return <TeamEmpty />
+    }else {
     return (
         <div className='Review'>
             <div className="Review-Card">
@@ -31,7 +36,7 @@ const Review = () => {
             ))}
             </div>
         </div>
-    )
+    )}
 }
 
 export { Review };
