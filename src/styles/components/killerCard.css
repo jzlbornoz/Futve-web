@@ -1,9 +1,9 @@
 .KillerCard-item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: start;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
     align-items: center;
     border: solid 1px var(--color1);
     border-radius: 10px;
@@ -12,8 +12,10 @@
     border: solid 1px var(--color3);
     background-color: var(--color3);
     padding: 5px;
-    max-height: 150px;
     box-shadow: 11px 28px 33px -6px rgba(0, 0, 0, 0.34);
+  }
+  .KillerCard-item img{
+    border-radius: 10px;
   }
 
   .KillerCard-item:hover{
@@ -22,6 +24,15 @@
     background-color: #09203f;
 background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23537895' fill-opacity='0.12' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
   }
+  .KillerCard-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .KillerCard-stats{
+    list-style: none;
+  }
+
 
   @media (max-width: 1000px){
     .KillerCard-item{
@@ -51,11 +62,12 @@ background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox=
 }
 
   .KillerCard-info h2{
-    margin-right: 20px;
+    text-align: center;
   }
 
 
   .map{
     display: flex;
     align-items: center;
+    list-style: none;
   }
