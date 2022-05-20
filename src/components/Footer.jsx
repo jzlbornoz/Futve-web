@@ -3,14 +3,24 @@ import '../styles/components/footer.css';
 
 const Footer = () => {
     return (
-        <div className="Footer">
+        <section className="Footer">
             <div className="Footer-wrapper">
-                <h2>
-                    Created by Javier Albornoz
-                </h2>
-                <h3>Merida - Venezuela <br /> 2022</h3>
+                <div className="Footer-social">
+                    <a href="https://www.instagram.com/jzlbornoz/">
+                        <i className="fa-brands fa-instagram fa-2xl" />
+                    </a>
                 </div>
-        </div>
+                <div className="Footer-term">
+                    <p>Term of use - Privacy Policy</p>
+                </div>
+                <section className="Footer-git">
+                    <a href="https://github.com/jzlbornoz">
+                        <i className="fa-brands fa-github" />
+                        <p>jzlbornoz</p>
+                    </a>
+                </section>
+            </div>
+        </section>
     )
 }
 
