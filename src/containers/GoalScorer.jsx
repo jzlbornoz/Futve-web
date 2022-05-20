@@ -6,7 +6,7 @@ import '../styles/containers/GoalScorer.css'
 import { Link } from 'react-router-dom';
 
 const GoalScorer = () => {
-    const { killers, loading, addToKiller } = useContext(AppContext);
+    const { filteredKillers, loading, addToKiller, handleSearch, inputRef, searchK } = useContext(AppContext);
 
     const handleKiller = (player) => () => {
         addToKiller(player);
@@ -14,21 +14,21 @@ const GoalScorer = () => {
 
     if (loading) {
         return <Loading />
-    } if (killers) {
+    } if (filteredKillers) {
         return (
-            <div className="GoalScorer">
+            <section className="GoalScorer">
                 <div className="GoalScorer-title">
-                    <i className="fa-solid fa-bullseye fa-2xl" />
                     <h1>Top GoalScorer</h1>
+                    <input type="text" placeholder='Buscar' ref={inputRef} value={searchK} onChange={handleSearch} />
                 </div>
-                {killers.map(killer => (
+                {filteredKillers.length > 0 ? filteredKillers.map(killer => (
                     <Link to='/goalScorer/review' key={killer.player.id} >
                         <KillerCard killer={killer} handleKiller={handleKiller(killer)} />
                     </Link>
-                ))}
-            </div>
+                )) : < section className='GoalScorer-empty'>Oops, No Killer</section> }
+            </section>
         )
-    }else {
+    } else {
         return <Loading />
     }
 

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import initialState from '../initialState';
 
 const useTeam = () => {
@@ -7,6 +7,7 @@ const useTeam = () => {
     const [state, setState] = useState(initialState);
     const [loading, setLoading] = useState(true);
     const [killers, setKillers] = useState([]);
+    const [searchK, setSearchk] = useState('');
 
     //Trae a los equipos del futve
     useEffect(() => {
@@ -62,6 +63,17 @@ const useTeam = () => {
         });
     };
 
+    //Filtro de jugadores para el buscador
+    const inputRef = useRef(null);
+
+    const handleSearch = () => {
+        setSearchk(inputRef.current.value);
+    };
+
+    const filteredKillers = killers.filter(filteredKiller => (
+        filteredKiller.player.name.toLowerCase().includes(searchK.toLowerCase())
+    ));
+
     return ({
         team,
         addToSelect,
@@ -69,6 +81,10 @@ const useTeam = () => {
         loading,
         killers,
         addToKiller,
+        searchK,
+        handleSearch,
+        filteredKillers,
+        inputRef,
     })
 };
 
