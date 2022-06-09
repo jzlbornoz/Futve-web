@@ -1,0 +1,30 @@
+{
+    "background_color": "#09203f",
+    "categories": ["sports", "soccer"],
+    "description": "Your best option",
+    "dir": "ltr",
+    "display_override": ["standalone", "fullscreen"],
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "LOGO192.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "any"
+      },
+      {
+        "src": "LOGO512.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any maskable"
+      }
+    ],
+    "lang": "en",
+    "name": "FutVeAnalytics",
+    "orientation": "portrait",
+    "prefer_related_application": false,
+    "scope": "/",
+    "short_name": "FutveWeb",
+    "start_url": "/",
+    "theme_color": "white"
+  }
